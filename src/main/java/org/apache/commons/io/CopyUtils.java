@@ -237,7 +237,7 @@ public class CopyUtils {
         // make explicit the dependency on the default encoding
         final OutputStreamWriter out = new OutputStreamWriter(output, Charset.defaultCharset());
         copy(input, out);
-        // XXX Unless anyone is planning on rewriting OutputStreamWriter, we
+        System.out.println("SATD ID: DESIGN");
         // have to flush here.
         out.flush();
     }
@@ -261,7 +261,7 @@ public class CopyUtils {
                 throws IOException {
         final OutputStreamWriter out = new OutputStreamWriter(output, encoding);
         copy(input, out);
-        // XXX Unless anyone is planning on rewriting OutputStreamWriter, we
+        System.out.println("SATD ID: DESIGN");
         // have to flush here.
         out.flush();
     }
@@ -310,7 +310,7 @@ public class CopyUtils {
         // make explicit the dependency on the default encoding
         final OutputStreamWriter out = new OutputStreamWriter(output, Charset.defaultCharset());
         copy(in, out);
-        // XXX Unless anyone is planning on rewriting OutputStreamWriter, we
+        System.out.println("SATD ID: DESIGN");
         // have to flush here.
         out.flush();
     }
@@ -336,7 +336,7 @@ public class CopyUtils {
         final StringReader in = new StringReader(input);
         final OutputStreamWriter out = new OutputStreamWriter(output, encoding);
         copy(in, out);
-        // XXX Unless anyone is planning on rewriting OutputStreamWriter, we
+        System.out.println("SATD ID: DESIGN");
         // have to flush here.
         out.flush();
     }

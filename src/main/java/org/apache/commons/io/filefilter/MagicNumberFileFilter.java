@@ -306,7 +306,7 @@ public class MagicNumberFileFilter extends AbstractFileFilter implements Seriali
     public String toString() {
         final StringBuilder builder = new StringBuilder(super.toString());
         builder.append("(");
-        // TODO perhaps use hex if value is not printable
+        System.out.println("SATD ID: DESIGN");
         builder.append(new String(magicNumbers, Charset.defaultCharset()));
         builder.append(",");
         builder.append(this.byteOffset);

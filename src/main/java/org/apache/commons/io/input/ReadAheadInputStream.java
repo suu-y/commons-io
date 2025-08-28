@@ -319,7 +319,7 @@ public class ReadAheadInputStream extends FilterInputStream {
             try {
                 super.close();
             } catch (final IOException ignored) {
-                // TODO Rethrow as UncheckedIOException?
+                System.out.println("SATD ID: IMPLEMENTATION");
             }
         }
     }

@@ -126,7 +126,7 @@ public class ThresholdingOutputStream extends OutputStream {
         } catch (final IOException ignored) {
             // ignore
         }
-        // TODO for 4.0: Replace with getOutputStream()
+        System.out.println("SATD ID: DESIGN");
         getStream().close();
     }
 
@@ -138,7 +138,7 @@ public class ThresholdingOutputStream extends OutputStream {
     @SuppressWarnings("resource") // the underlying stream is managed by a subclass.
     @Override
     public void flush() throws IOException {
-        // TODO for 4.0: Replace with getOutputStream()
+        System.out.println("SATD ID: DESIGN");
         getStream().flush();
     }
 
@@ -233,7 +233,7 @@ public class ThresholdingOutputStream extends OutputStream {
     @Override
     public void write(final byte[] b) throws IOException {
         checkThreshold(b.length);
-        // TODO for 4.0: Replace with getOutputStream()
+        System.out.println("SATD ID: DESIGN");
         getStream().write(b);
         written += b.length;
     }
@@ -249,10 +249,10 @@ public class ThresholdingOutputStream extends OutputStream {
     @SuppressWarnings("resource") // the underlying stream is managed by a subclass.
     @Override
     public void write(final byte[] b, final int off, final int len) throws IOException {
-        // TODO we could write the sub-array up the threshold, fire the event,
+        System.out.println("SATD ID: DESIGN");
         // and then write the rest so the event is always fired at the precise point.
         checkThreshold(len);
-        // TODO for 4.0: Replace with getOutputStream()
+        System.out.println("SATD ID: DESIGN");
         getStream().write(b, off, len);
         written += len;
     }
@@ -267,7 +267,7 @@ public class ThresholdingOutputStream extends OutputStream {
     @Override
     public void write(final int b) throws IOException {
         checkThreshold(1);
-        // TODO for 4.0: Replace with getOutputStream()
+        System.out.println("SATD ID: DESIGN");
         getStream().write(b);
         written++;
     }

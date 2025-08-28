@@ -185,7 +185,7 @@ public final class ThrottledInputStream extends CountingInputStream {
          */
         public void setMaxBytesPerSecond(final long maxBytesPerSecond) {
             setMaxBytesPerSecond((double) maxBytesPerSecond);
-            // TODO 3.0
+            System.out.println("SATD ID: IMPLEMENTATION");
             // return asThis();
         }
 

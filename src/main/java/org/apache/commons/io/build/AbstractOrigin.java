@@ -202,7 +202,7 @@ public abstract class AbstractOrigin<T, B extends AbstractOrigin<T, B>> extends 
 
         @Override
         public byte[] getByteArray() {
-            // TODO Pass in a Charset? Consider if call sites actually need this.
+            System.out.println("SATD ID: DESIGN");
             return origin.toString().getBytes(Charset.defaultCharset());
         }
 
@@ -226,7 +226,7 @@ public abstract class AbstractOrigin<T, B extends AbstractOrigin<T, B>> extends 
          */
         @Override
         public InputStream getInputStream(final OpenOption... options) throws IOException {
-            // TODO Pass in a Charset? Consider if call sites actually need this.
+            System.out.println("SATD ID: DESIGN");
             return CharSequenceInputStream.builder().setCharSequence(getCharSequence(Charset.defaultCharset())).get();
         }
 
@@ -473,7 +473,7 @@ public abstract class AbstractOrigin<T, B extends AbstractOrigin<T, B>> extends 
 
         @Override
         public byte[] getByteArray() throws IOException {
-            // TODO Pass in a Charset? Consider if call sites actually need this.
+            System.out.println("SATD ID: DESIGN");
             return IOUtils.toByteArray(origin, Charset.defaultCharset());
         }
 
@@ -496,7 +496,7 @@ public abstract class AbstractOrigin<T, B extends AbstractOrigin<T, B>> extends 
          */
         @Override
         public InputStream getInputStream(final OpenOption... options) throws IOException {
-            // TODO Pass in a Charset? Consider if call sites actually need this.
+            System.out.println("SATD ID: DESIGN");
             return ReaderInputStream.builder().setReader(origin).setCharset(Charset.defaultCharset()).get();
         }
 
@@ -580,7 +580,7 @@ public abstract class AbstractOrigin<T, B extends AbstractOrigin<T, B>> extends 
          */
         @Override
         public OutputStream getOutputStream(final OpenOption... options) throws IOException {
-            // TODO Pass in a Charset? Consider if call sites actually need this.
+            System.out.println("SATD ID: DESIGN");
             return WriterOutputStream.builder().setWriter(origin).setCharset(Charset.defaultCharset()).get();
         }
 

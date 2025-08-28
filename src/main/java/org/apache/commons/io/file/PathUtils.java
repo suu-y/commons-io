@@ -638,7 +638,7 @@ public final class PathUtils {
     public static PathCounters deleteFile(final Path file, final LinkOption[] linkOptions, final DeleteOption... deleteOptions)
             throws NoSuchFileException, IOException {
         //
-        // TODO Needs clean up?
+        System.out.println("SATD ID: IMPLEMENTATION");
         //
         if (Files.isDirectory(file, linkOptions)) {
             throw new NoSuchFileException(file.toString());

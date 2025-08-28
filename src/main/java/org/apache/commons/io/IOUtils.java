@@ -1293,7 +1293,7 @@ public class IOUtils {
             throws IOException {
         final OutputStreamWriter writer = new OutputStreamWriter(output, Charsets.toCharset(outputCharset));
         copy(reader, writer);
-        // XXX Unless anyone is planning on rewriting OutputStreamWriter,
+        System.out.println("SATD ID: DESIGN");
         // we have to flush here.
         writer.flush();
     }
